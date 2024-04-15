@@ -1,0 +1,91 @@
+
+body
+{
+  background-color: black;
+}
+.my-card {
+  width: 18rem;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+  /* color: black; */
+}
+
+.my-card:hover {
+  transform: scale(1.05);
+}
+
+.my-card.clicked {
+  transform: scale(0.95);
+}
+
+.card-img {
+  height: 25rem;
+  object-fit: contain;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.btnClass {
+  transition: background-color 0.3s, color 0.3s;
+  border: none;
+}
+
+.btnClass:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btnClass:focus {
+  outline: none;
+}
+
+fa-sm {
+  transition: color 0.3s;
+  color: Grey;
+}
+
+.btnClass.added {
+  background-color: #ffc107; 
+  color: #fff;
+}
+
+.btnClass.removed {
+  background-color: #dc3545; 
+  color: #fff;
+}
+
+#button {
+  --offset: 10px;
+  --border-size: 2px;
+  display: block;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 150px;
+  height: 40px;
+  padding: 0.3em;
+  font-size: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #e55743;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  box-shadow: inset 0 0 0 var(--border-size) currentcolor;
+  transition: background 0.8s ease;
+}
+.button:hover {
+  background: rgba(100, 0, 0, 0.03);
+  color: firebrick;
+}
